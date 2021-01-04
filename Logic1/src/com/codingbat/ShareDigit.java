@@ -9,7 +9,7 @@ shareDigit(12, 43) → false
 shareDigit(12, 44) → false
  */
 
-public class ShareTicket {
+public class ShareDigit {
 
     public boolean shareDigit(int a, int b) {
         return a % 10 == b % 10 || a / 10 == b / 10 || a % 10 == b / 10 || a / 10 == b % 10;
