@@ -16,10 +16,9 @@ public class XyzMiddle {
         int startBoth = (str.length() / 2) - 1;
         int startEven = (str.length() / 2) - 2;
 
-        boolean xyz = str.substring(startBoth, startBoth + 3).equals("xyz");
         if (str.length() % 2 == 0) {
-            return (str.substring(startEven, startEven + 3).equals("xyz")) || xyz;
+            return (str.substring(startEven, startEven + 3).equals("xyz")) || (str.substring(startBoth, startBoth + 3).equals("xyz"));
         }
-        return xyz;
+        return (str.substring(startBoth, startBoth + 3).equals("xyz"));
     }
 }
