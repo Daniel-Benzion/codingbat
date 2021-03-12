@@ -5,15 +5,15 @@ public class MergeTwo {
 		int aIndex = 0;
 		int bIndex = 0;
 
-		for (int index = 0; index < n; index++) {
+		for (int i = 0; i < n; i++) {
 			if (a[aIndex].compareTo(b[bIndex]) < 0) {
-				result[index] = a[aIndex];
+				result[i] = a[aIndex];
 				aIndex++;
 			} else if (a[aIndex].compareTo(b[bIndex]) > 0) {
-				result[index] = b[bIndex];
+				result[i] = b[bIndex];
 				bIndex++;
 			} else {
-				result[index] = a[aIndex];
+				result[i] = a[aIndex];
 				aIndex++;
 				bIndex++;
 			}
